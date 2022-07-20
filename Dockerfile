@@ -122,8 +122,8 @@ USER root
 
 
 RUN pip install jupyterlab-lsp 'python-lsp-server[all]' -i https://pypi.tuna.tsinghua.edu.cn/simple
-ADD requirements.aiyx.tf2.8.depends.txt /
-RUN pip install -r /requirements.aiyx.tf2.8.depends.txt -U --no-deps -i https://pypi.tuna.tsinghua.edu.cn/simple
+#ADD requirements.aiyx.tf2.8.depends.txt /
+#RUN pip install -r /requirements.aiyx.tf2.8.depends.txt -U --no-deps -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
 ENV PATH=/home/atp/.local/bin:${PATH}
